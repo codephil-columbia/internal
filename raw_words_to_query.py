@@ -2,13 +2,13 @@
 formatted_lines = []
 
 def get_coco_formatted(raw_line):
-	return "(uuid_generate_v4(), '%s', 'coco')" % raw_line.rstrip()
+	return "(uuid_generate_v4(), '%s', 'coco')," % raw_line.rstrip()
 
 def get_spacerace_formatted(raw_line):
-	return "(uuid_generate_v4(), '%s', 'spacerace')" % raw_line.rstrip()
+	return "(uuid_generate_v4(), '%s', 'spacerace')," % raw_line.rstrip()
 
 def get_boatrace_formatted(raw_line):
-	temp_string = "(uuid_generate_v4(), '%s', 'boatrace')" % raw_line.rstrip()
+	temp_string = "(uuid_generate_v4(), '%s', 'boatrace')," % raw_line.rstrip()
 	return temp_string.replace("\n", "\\n")
 
 temp_spacerace_line = ""
